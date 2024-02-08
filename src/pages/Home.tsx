@@ -11,7 +11,7 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState(allCategories[0]);
   // console.log(selectedCategory);
 
-  // TODO GET MOVIES BY CATEGORY
+  // TODO GET MOVIES BY CATEGORY AND GENRE
 
   return (
     <>
