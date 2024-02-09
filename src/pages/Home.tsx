@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Moive from "../components/Moive";
-import useMovies from "../hooks/useMovies";
+import useGetMovies from "../hooks/useGetMovies";
 import useMoviesGenres from "../hooks/useMoviesGenres";
 import Categories from "../components/Categories";
 
 export default function Home() {
-  const { movies } = useMovies();
+  const { movies } = useGetMovies({ pageNumber: 1 });
   const { categoriesOfMovies } = useMoviesGenres();
   const allCategories = ["all", ...categoriesOfMovies];
   const [selectedCategory, setSelectedCategory] = useState(allCategories[0]);

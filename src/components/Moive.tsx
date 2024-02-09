@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Movie } from "../types";
 import { baseImgURL } from "../config";
 import Badge from "./Badge";
-import { convertGenreIDtoText } from "../lib/utlis";
+import { getFirstFourGenres } from "../lib/utlis";
 type MovieProps = Movie;
 
 export default function Moive({
@@ -14,7 +14,7 @@ export default function Moive({
   title,
   adult,
 }: MovieProps) {
-  const movieGenres = convertGenreIDtoText(genre_ids);
+  const movieGenres = getFirstFourGenres(genre_ids);
   return (
     <div className="flex flex-col gap-2">
       <Link to={`/movie/${id}`} className="relative aspect-video">
@@ -34,7 +34,7 @@ export default function Moive({
       <div className="flex gap-1">
         {movieGenres.map((genre, i) => {
           if (i === 4) return;
-          return <Badge>{genre?.name}</Badge>;
+          return <Badge key={i}>{genre?.name}</Badge>;
         })}
       </div>
     </div>
