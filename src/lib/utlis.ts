@@ -12,5 +12,5 @@ export const getFirstFourGenres = (ids: number[]) => {
   const { genres } = useMoviesGenres();
 
   const movieGenres = convertGenreIDtoText(ids, genres);
-  return movieGenres.slice(0, 4);
+  return movieGenres.slice(0, 3);
 };
