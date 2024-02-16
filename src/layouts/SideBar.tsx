@@ -76,27 +76,6 @@ export default function SideBar() {
           <LargeSidebarItem title={"Horror"}></LargeSidebarItem>
           <LargeSidebarItem title={"Drama"}></LargeSidebarItem>
         </LargeSidebarSection>
-        <hr />
-        <LargeSidebarSection visibleItemCount={2} title={"Genres"}>
-          <LargeSidebarItem title={"Action"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Comedy"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Horror"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Drama"}></LargeSidebarItem>
-        </LargeSidebarSection>
-        <hr />
-        <LargeSidebarSection visibleItemCount={2} title={"Genres"}>
-          <LargeSidebarItem title={"Action"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Comedy"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Horror"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Drama"}></LargeSidebarItem>
-        </LargeSidebarSection>
-        <hr />
-        <LargeSidebarSection visibleItemCount={2} title={"Genres"}>
-          <LargeSidebarItem title={"Action"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Comedy"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Horror"}></LargeSidebarItem>
-          <LargeSidebarItem title={"Drama"}></LargeSidebarItem>
-        </LargeSidebarSection>
       </aside>
     </>
   );
