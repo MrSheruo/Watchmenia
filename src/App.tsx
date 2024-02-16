@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 
 import SideBar from "./layouts/SideBar";
 import { SidebarProvider } from "./contexts/sidebarContext";
+import GetMoviesByCategory from "./contexts/getMoviesByCategory";
 
 export default function App() {
   return (
@@ -12,15 +13,22 @@ export default function App() {
         <PageHeader />
         <div className="grid grid-cols-[auto,1fr] flex-grow-1 overflow-auto">
           <SideBar />
-          <div className="overflow-x-hidden px-8 pb-4">
+          <main className="overflow-x-hidden px-8 pb-4">
             <Routes>
-              <Route path="/" element={<Home />}></Route>
+              <Route
+                path="/"
+                element={
+                  <GetMoviesByCategory>
+                    <Home />
+                  </GetMoviesByCategory>
+                }
+              ></Route>
               <Route path="/movies">
                 <Route index element={<div>Movies Page</div>}></Route>
                 <Route path=":name" element={<div>Movie Page</div>}></Route>
               </Route>
             </Routes>
-          </div>
+          </main>
         </div>
       </div>
     </SidebarProvider>
