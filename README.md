@@ -17,7 +17,7 @@
 ### Built With
 
 - [![React](https://img.shields.io/badge/React.js%20-20232A?style=for-the-badge&logo=react&logoColor=lightblue)](https://react.dev/)
-- [![TypeScript](https://img.shields.io/badge/TypeScript%20-3178c6?style=for-the-badge&logo=Typescript)](https://www.typescriptlang.org/)
+- [![TypeScript](https://img.shields.io/badge/TypeScript%20-3178c6?style=for-the-badge&logo=Typescript&logoColor=white)](https://www.typescriptlang.org/)
 - [![TailwindCSS](https://img.shields.io/badge/Tailwind%20-0b1120?style=for-the-badge&logo=TailwindCSS)](https://tailwindcss.com/)
 - [![Vitejs](https://img.shields.io/badge/Vite%20-ffc41c?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 - [![React-Router](https://img.shields.io/badge/React%20Router%20-121212?style=for-the-badge&logo=React-Router)](https://reactrouter.com/en/main)
