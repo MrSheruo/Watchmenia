@@ -1,4 +1,4 @@
-# WatchMenia
+# [WatchMenia](https://watchmenia.vercel.app/)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -7,7 +7,7 @@
     <img src="./public/favicon.ico" alt="Logo" width="80" height="80"/>
   </a>
 
-  <h3 align="center">WatchMenia</h3>
+<a href="https://watchmenia.vercel.app/"><h3 align="center">WatchMenia</h3></a>
 
   <p align="center">
       WatchMenia app is a YouTube clone for movies.
