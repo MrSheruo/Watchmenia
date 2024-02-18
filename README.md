@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MrSheruo/Watchmenia">
-    <img src="./public/favicon.ico" alt="Logo" width="80" height="80"/>
+    <img src="./public/logo.png" alt="Logo" width="80" height="80"/>
   </a>
 
 <a href="https://watchmenia.vercel.app/"><h3 align="center">WatchMenia</h3></a>
