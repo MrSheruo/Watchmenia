@@ -16,7 +16,7 @@ export default function Moive({
   const movieGenres = getFirstFourGenres(genre_ids);
   return (
     <div className="flex flex-col gap-2 w-fit">
-      <Link to={`/movie/${id}`} className="relative">
+      <Link to={`/movie/${id}`} reloadDocument className="relative">
         <img
           src={baseImgURL + backdrop_path}
           alt={title}

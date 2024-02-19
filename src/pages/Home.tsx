@@ -25,7 +25,7 @@ export default function Home() {
       {adPlaying && (
         <div
           onClick={() => setAdPlaying(null)}
-          className="fixed inset-0 flex justify-center items-center bg-black/90 z-50"
+          className="fixed inset-0 flex justify-center items-center bg-black/90 z-50 animate-start-video"
         >
           <ReactPlayer
             url={adPlaying}
@@ -57,7 +57,7 @@ export default function Home() {
             >
               <img
                 className="rounded-lg"
-                width={750}
+                width={550}
                 src={a.image}
                 alt={a.title}
               />

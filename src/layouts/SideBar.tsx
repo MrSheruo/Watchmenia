@@ -18,7 +18,7 @@ export default function SideBar() {
   return (
     <>
       <aside
-        className={`sticky top-0 overflow-y-auto scrollbar-hidden flex-col ${
+        className={`sticky top-0 hidden overflow-y-auto scrollbar-hidden flex-col ${
           isLargeOpen ? "lg:hidden" : "lg:flex"
         }`}
       >
@@ -40,7 +40,7 @@ export default function SideBar() {
       <aside
         className={`w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 pr-2  ${
           isLargeOpen ? "lg:flex" : "lg:hidden"
-        } ${isSmallOpen ? "flex z-50 bg-white max-h-screen" : "hidden"}`}
+        } ${isSmallOpen ? "flex z-50 bg-white h-screen" : "hidden"}`}
       >
         <div className="lg:hidden py-4 px-2 sticky top-0 bg-white">
           <PageHeaderFirstSection />

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import SideBar from "./layouts/SideBar";
 import { SidebarProvider } from "./contexts/sidebarContext";
 import GetMoviesByCategory from "./contexts/getMoviesByCategory";
+import Movie from "./pages/Movie";
 
 export default function App() {
   return (
@@ -23,9 +24,9 @@ export default function App() {
                   </GetMoviesByCategory>
                 }
               ></Route>
-              <Route path="/movies">
+              <Route path="/movie">
                 <Route index element={<div>Movies Page</div>}></Route>
-                <Route path=":name" element={<div>Movie Page</div>}></Route>
+                <Route path=":movieId" element={<Movie />}></Route>
               </Route>
             </Routes>
           </main>
