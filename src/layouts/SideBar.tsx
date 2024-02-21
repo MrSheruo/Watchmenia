@@ -18,7 +18,7 @@ export default function SideBar() {
   return (
     <>
       <aside
-        className={`sticky top-0 hidden overflow-y-auto scrollbar-hidden flex-col ${
+        className={`sticky top-0 hidden  overflow-y-auto scrollbar-hidden flex-col ${
           isLargeOpen ? "lg:hidden" : "lg:flex"
         }`}
       >
@@ -34,7 +34,7 @@ export default function SideBar() {
       {isSmallOpen && (
         <div
           onClick={close}
-          className="lg:hidden fixed inset-0 z-50 bg-secondary-dark opacity-50"
+          className="lg:hidden fixed inset-0 z-50 bg-secondary-dark opacity-50 overflow-clip"
         />
       )}
       <aside

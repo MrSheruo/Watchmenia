@@ -10,7 +10,11 @@ export default function Movie() {
   if (movieId === undefined) {
     return;
   }
+  if (movieId === undefined) {
+    return;
+  }
   const { movie } = useGetMovieData({ movieId });
+
   const [playMovieTrailer, setPlayMovieTrailer] = useState<string | null>(null);
   return (
     <>
@@ -44,16 +48,17 @@ export default function Movie() {
                 {movie.movieData?.title} |{" "}
                 <span className="text-xl">{movie.movieData?.tagline}</span>
               </h1>
+              {/*  */}
               <div>
                 <h3>Original Title : {movie.movieData?.original_title}</h3>
                 <p>Release Date : {movie.movieData?.release_date}</p>
                 <p>Rating : {movie.movieData?.vote_average}</p>
+                <p>Age : {movie.movieData?.adult}</p>
               </div>
               <p className="max-w-[60ch]">
                 Overview : <br />
                 {movie.movieData?.overview}
               </p>
-
               <div className="flex gap-4">
                 <Button
                   onClick={() => setPlayMovieTrailer(movie.movieTrailer)}
