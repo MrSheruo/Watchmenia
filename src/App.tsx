@@ -5,7 +5,6 @@ import SideBar from "./layouts/SideBar";
 import { SidebarProvider } from "./contexts/sidebarContext";
 import GetMoviesByCategory from "./contexts/getMoviesByCategory";
 import Movie from "./pages/Movie";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function App() {
   return (
